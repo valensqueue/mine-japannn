@@ -1,0 +1,949 @@
+MASTER BRIEF — Japanese Learning Website
+
+1. เป้าหมายของเว็บ
+
+สร้างเว็บเรียนภาษาญี่ปุ่นแบบ Interactive ที่ให้ความรู้สึกเหมือน แอปเรียนภาษา / คอร์สออนไลน์จริง ๆ ไม่ใช่เว็บรวมข้อมูลหรือเว็บที่เอาบทเรียน 200–300 บทมาเรียงกันเฉย ๆ
+
+ผู้ใช้ต้องรู้ว่า:
+
+- ตอนนี้อยู่ตรงไหน
+- ต้องเรียนอะไรต่อ
+- ต้องกดอะไรเพื่อเริ่ม
+- เรียนจบแล้วได้อะไร
+- บทต่อไปปลดล็อกเมื่อไหร่
+- Progress ของตัวเองอยู่ตรงไหน
+
+เว็บต้องใช้งานง่าย โดยเฉพาะตอนเปิดครั้งแรก ต้องสามารถเริ่ม บทที่ 01 ได้ทันที
+
+---
+
+2. โครงสร้างหลักของเว็บ
+
+มีหน้า/ระบบหลักประมาณนี้
+
+Home
+
+- แสดง Progress โดยรวม
+- แสดงบทที่กำลังเรียน
+- ปุ่ม Continue / เรียนต่อ
+- แสดง Course Map
+- เห็นบทที่เปิด/ล็อก
+
+Learn
+
+แบ่งหมวดการเรียน:
+
+- Hiragana
+- Katakana
+- Vocabulary
+- Grammar
+- Writing
+- Quiz
+
+Practice
+
+สำหรับทบทวนสิ่งที่เรียนมาแล้ว
+
+Profile
+
+แสดง:
+
+- จำนวนบทที่เรียนจบ
+- คะแนน
+- จำนวนวันที่เรียน
+- Progress %
+- Hiragana progress
+- Katakana progress
+- จำนวนเนื้อหาที่เรียนทั้งหมด
+
+Menu
+
+สำหรับเข้าหน้าหรือหมวดต่าง ๆ
+
+---
+
+3. Course Map
+
+ต้องมี Course Map ที่ให้ความรู้สึกเหมือนเส้นทางการเรียนจริง
+
+ตัวอย่าง:
+
+บท 01 → บท 02 → บท 03 → บท 04 → ...
+
+กติกา:
+
+- บท 01 เปิดตั้งแต่เริ่ม
+- บทถัดไปล็อกไว้
+- เมื่อผ่านบทก่อนหน้า → ปลดล็อกบทถัดไป
+- บทที่ผ่านแล้วต้องแสดงสถานะ completed
+- บทปัจจุบันต้องเห็นชัด
+- ห้ามเปิดเว็บครั้งแรกแล้วบท 01 ถูกล็อก
+
+Course มีประมาณ 200 บทเป็นอย่างน้อย
+
+---
+
+4. แบ่งเนื้อหา
+
+Hiragana
+
+ประมาณบท 01–46
+
+ครอบคลุม:
+
+- あ い う え お
+- か き く け こ
+- さ し す せ そ
+- た ち つ て と
+- な に ぬ ね の
+- は ひ ふ へ ほ
+- ま み む め も
+- や ゆ よ
+- ら り る れ ろ
+- わ を
+- ん
+- Dakuten
+- Handakuten
+- Yoon
+- ตัวพิเศษที่จำเป็น
+
+ต้องมี:
+
+- ตัวอักษร
+- Romaji
+- คำอ่านภาษาไทย
+- ตัวอย่าง
+- การอ่าน
+- Stroke order
+- ฝึกเขียน
+- Quiz
+
+---
+
+5. Katakana
+
+ประมาณบท 47–92
+
+ครอบคลุม:
+
+- ア イ ウ エ オ
+- カ キ ク ケ コ
+- サ シ ス セ ソ
+- タ チ ツ テ ト
+- ナ ニ ヌ ネ ノ
+- ハ ヒ フ ヘ ホ
+- マ ミ ム メ モ
+- ヤ ユ ヨ
+- ラ リ ル レ ロ
+- ワ ヲ
+- ン
+- Dakuten
+- Handakuten
+- Yoon
+- การใช้ Katakana กับคำยืม
+
+มีระบบเหมือน Hiragana:
+
+- ตัวอักษร
+- Romaji
+- คำอ่านไทย
+- ตัวอย่าง
+- Audio
+- Stroke order
+- Writing
+- Quiz
+
+---
+
+6. Vocabulary
+
+ประมาณบท 93–132
+
+ต้องไม่ใช่แค่ตารางคำศัพท์
+
+แบ่งเป็นหมวด เช่น:
+
+- ตัวเลข
+- วัน
+- เวลา
+- ครอบครัว
+- โรงเรียน
+- อาหาร
+- เครื่องดื่ม
+- สถานที่
+- สิ่งของ
+- คน
+- กิจวัตร
+- คำคุณศัพท์
+- คำกริยา
+- คำถาม
+- คำใช้ในชีวิตประจำวัน
+
+แต่ละคำควรมี:
+
+- Japanese
+- Romaji
+- ความหมายไทย
+- Audio
+- ตัวอย่างประโยคเมื่อเหมาะสม
+- Practice
+
+ต้องมี Search
+
+---
+
+7. Grammar
+
+ประมาณบท 133–170
+
+ต้องสอน Grammar แบบเป็นขั้น ไม่ใช่แค่แสดงสูตร
+
+ตัวอย่างหัวข้อ:
+
+Basic sentence
+
+- A は B です
+- A は B じゃありません
+- A は B ですか
+
+Particles
+
+- は
+- が
+- を
+- に
+- で
+- へ
+- と
+- も
+- の
+- から
+- まで
+
+ข้อควรจำ:
+
+- は เมื่อเป็น particle อ่านว่า wa
+- を อ่านว่า o
+- へ เมื่อเป็น particle อ่านว่า e
+
+Verbs
+
+- あります
+- います
+- です
+- กริยาพื้นฐาน
+
+จำแนก:
+
+- あります = สิ่งไม่มีชีวิต
+- います = สิ่งมีชีวิต
+
+Adjectives
+
+- い-adjective
+- な-adjective
+
+ต้องระวัง:
+
+- きれい เป็น な-adjective
+
+Forms
+
+- Dictionary form
+- ます form
+- ない form
+- て form
+
+กฎสำคัญ:
+
+て-form Group 1
+
+- う / つ / る → って
+- ぬ / ぶ / む → んで
+- く → いて
+- ぐ → いで
+- す → して
+
+Exception:
+
+- いく → いって
+
+Group 2
+
+- る → て
+
+Irregular
+
+- する → して
+- くる → きて
+
+ない-form
+
+Group 1:
+
+- u-ending → a-row + ない
+- う → わない
+
+Group 2:
+
+- る → ない
+
+Irregular:
+
+- する → しない
+- くる → こない
+
+Expressions
+
+- ～ないでください = กรุณาอย่า...
+- ～なければなりません = ต้อง...
+- ～なくてもいい = ไม่ต้อง...
+- ～てもいいですか = ขออนุญาต...ได้ไหม
+- ～てはいけません = ห้าม...
+
+Grammar ต้องมี:
+
+- Explanation
+- Example
+- Audio
+- Practice
+- Quiz
+
+---
+
+8. Intermediate
+
+ประมาณบท 171–200
+
+ต้องเริ่มต่อยอดจากพื้นฐาน เช่น:
+
+- Sentence patterns
+- การผันรูป
+- Conversation
+- Reading
+- Listening
+- Grammar combination
+- Vocabulary usage
+- ประโยคในชีวิตประจำวัน
+
+ไม่ควรให้ 171–200 เป็นแค่ placeholder ถ้าทำเนื้อหาเต็ม
+
+---
+
+9. รูปแบบ “หนึ่งบทเรียน”
+
+นี่เป็นส่วนสำคัญมาก
+
+เมื่อกดเข้า Lesson ต้องไม่ใช่หน้าเดียวที่มีข้อมูลทั้งหมด
+
+ต้องเป็น Guided Lesson / Multi-step Lesson
+
+ลำดับประมาณ:
+
+STEP 1 — Intro
+
+แสดง:
+
+- ตัวอักษร / คำศัพท์ / Grammar
+- Romaji
+- คำอ่านไทย
+- ชื่อบท
+- คำอธิบายสั้น ๆ
+
+STEP 2 — Explanation
+
+อธิบายสิ่งที่กำลังเรียน
+
+STEP 3 — Listen
+
+- ฟังเสียง
+- Replay
+- Slow playback
+- แสดงสิ่งที่กำลังฟัง
+
+STEP 4 — Reading
+
+ให้ผู้เรียนลองอ่าน
+
+- แสดงตัวอักษร/คำ
+- Romaji
+- Thai pronunciation
+- ตัวเลือกคำตอบ
+
+STEP 5 — Stroke Order
+
+สำหรับ Kana:
+
+- แสดงลำดับขีดจริง
+- มี animation
+- มีหมายเลขลำดับขีด
+- สามารถ Replay animation ได้
+
+ไม่เอาแค่เส้น placeholder ที่ดูเหมือนขยับ
+
+STEP 6 — Writing
+
+มี Canvas สำหรับ:
+
+- ลากเขียน
+- Trace ตามเส้น guide
+- ตรวจ/ให้ feedback เบื้องต้น
+- Clear
+- Try again
+
+STEP 7 — Quiz
+
+- หลายข้อ
+- Multiple choice
+- ตรวจคำตอบ
+- แสดง feedback
+- คะแนน
+- Progress ของ Quiz
+
+STEP 8 — Result
+
+เมื่อจบบท:
+
+- Score
+- จำนวนข้อถูก
+- จำนวนข้อทั้งหมด
+- Best score
+- สถานะผ่าน
+- ปลดล็อกบทถัดไป
+- ปุ่มไปบทถัดไป
+
+---
+
+10. ระบบ Progress
+
+ต้องบันทึกข้อมูลผู้เรียน
+
+โครงสร้างประมาณ:
+
+progress = {
+  completedLessons: [1, 2, 3, 4, 5],
+  currentLesson: 6,
+  scores: {
+    1: 100,
+    2: 80,
+    3: 100
+  },
+  kana: {
+    hiragana: {
+      あ: true,
+      い: true,
+      う: true
+    },
+    katakana: {
+      ア: true,
+      イ: true
+    }
+  }
+}
+
+ต้องใช้ "localStorage"
+
+เมื่อ refresh หน้า:
+
+- Progress ต้องไม่หาย
+- บทที่ผ่านแล้วต้องยังผ่าน
+- บทที่ปลดล็อกแล้วต้องยังเปิด
+- Continue ต้องพากลับไปบทที่กำลังเรียน
+
+---
+
+11. Home Progress
+
+ต้องแสดง:
+
+- จำนวนบทที่ผ่าน
+- Progress bar
+- Current lesson
+- ชื่อบท
+- หมวด
+- คำอธิบาย
+- Continue button
+
+ถ้ายังไม่เคยเรียน:
+
+«เริ่มบทเรียน 01»
+
+ไม่ใช่แสดงว่าไม่มีอะไรให้เรียนหรือทำให้บท 01 ถูกล็อก
+
+---
+
+12. Audio
+
+ใช้ Browser Speech Synthesis ได้ถ้าไม่มีไฟล์เสียงจริง
+
+ต้องมี:
+
+- Play
+- Replay
+- Slow
+
+เสียงควรใช้ Japanese voice ถ้า browser มี
+
+ต้องไม่ทำให้เว็บพังถ้า device ไม่มี Japanese voice
+
+---
+
+13. Practice
+
+Practice ต้องสามารถสุ่มทบทวนสิ่งที่เรียนมาแล้ว เช่น:
+
+- อ่าน Hiragana
+- อ่าน Katakana
+- Vocabulary
+- Grammar
+- Multiple choice
+- Matching
+- จำความหมาย
+- อ่านคำ
+
+ควรเน้นสิ่งที่ผู้เรียนเคยผิดด้วยในอนาคต
+
+---
+
+14. Character Detail Modal
+
+เมื่อกด Kana ให้เปิดรายละเอียด
+
+ต้องแสดง:
+
+- Character
+- Title
+- Romaji
+- Thai pronunciation
+- Type
+- Stroke order
+- Tip
+
+IDs ที่มีใน HTML:
+
+character-modal
+character-modal-title
+detail-character
+detail-title
+detail-romaji
+detail-thai
+detail-romaji-2
+detail-thai-2
+detail-type
+detail-order
+detail-tip
+
+---
+
+15. Kana Table
+
+ต้องมี:
+
+- Hiragana tab
+- Katakana tab
+- ตารางตัวอักษร
+- สถานะว่าเรียนแล้วหรือยัง
+- กดตัวอักษรเพื่อดูรายละเอียด
+- สามารถ mark learned
+
+IDs:
+
+kana-note
+kana-table
+data-kana-tab="hiragana"
+data-kana-tab="katakana"
+
+---
+
+16. Writing
+
+Canvas ต้อง:
+
+- ใช้นิ้วบนมือถือได้
+- Mouse ได้
+- มี guide
+- ล้างกระดานได้
+- เขียนซ้ำได้
+- แสดง feedback
+
+ID:
+
+writing-guide
+writing-canvas
+writing-feedback
+
+---
+
+17. Quiz
+
+มี:
+
+quiz-progress
+quiz-score
+quiz-question-text
+quiz-character
+quiz-options
+quiz-feedback
+quiz-submit
+
+ระบบควร:
+
+1. แสดงคำถาม
+2. เลือกคำตอบ
+3. Submit
+4. ตรวจ
+5. แสดงถูก/ผิด
+6. ไปข้อถัดไป
+7. คำนวณคะแนน
+8. ส่งไป Result
+
+---
+
+18. Result
+
+มี:
+
+result-score
+result-title
+result-description
+result-correct
+result-total
+result-best
+
+ต้องแสดงผลจริงจาก Quiz
+
+---
+
+19. Course Unlock
+
+กติกาหลัก:
+
+Lesson 1 = เปิดเสมอ
+
+Lesson N =
+เปิดเมื่อ Lesson N-1 ผ่าน
+
+เช่น:
+
+01 เปิด
+02 ล็อก
+
+ผ่าน 01
+
+01 ผ่าน
+02 เปิด
+03 ล็อก
+
+ต้องไม่เกิดกรณี:
+
+«เปิดเว็บครั้งแรก → บท 01 ล็อก → ผู้ใช้เริ่มเรียนไม่ได้»
+
+---
+
+20. UI / Design
+
+Mood:
+
+- Japanese learning app
+- cute
+- scrapbook
+- handmade
+- clean
+- friendly
+- น่ารักแต่ไม่เด็กเกินไป
+
+ใช้โทน:
+
+- Pink pastel
+- Light blue
+- Light green
+- Cream
+- Light yellow
+
+มีความรู้สึกเหมือน:
+
+- สมุดเรียน
+- Sticker
+- Paper
+- Card
+- Handmade UI
+
+แต่ต้องไม่รก
+
+---
+
+21. รูปภาพ / Decorations
+
+ห้ามใช้ Emoji เป็นองค์ประกอบหลักในเว็บ
+
+ไม่ต้องใส่:
+
+- emoji เป็น icon
+- emoji เป็น decoration
+
+ให้ใช้:
+
+- PNG
+- ภาพตกแต่ง
+- CSS shapes
+- scrapbook decorations
+- ribbon
+- paper
+- sticker-like assets
+
+ถ้า PNG หาย:
+
+- เว็บต้องยังทำงาน
+- ไม่ควรมี broken image icon
+- ซ่อน element นั้นได้ถ้าจำเป็น
+
+---
+
+22. Responsive
+
+ต้องใช้ได้บน:
+
+- มือถือ
+- Tablet
+- Desktop
+
+เน้นมือถือเป็นหลัก เพราะเป็นเว็บที่ใช้เรียนแบบแอป
+
+ต้อง:
+
+- ปุ่มกดง่าย
+- Canvas ใช้นิ้วได้
+- ไม่ overflow แนวนอน
+- Text ไม่ล้น
+- Card ไม่บีบรูปจนเสียสัดส่วน
+
+รูปภาพต้องรักษา aspect ratio
+ห้ามเกิดปัญหารูปถูกบีบจนยืด
+
+---
+
+23. Navigation
+
+มี Bottom Navigation แบบแอป
+
+เช่น:
+
+Home | Learn | Practice | Profile
+
+ต้องมี transition ระหว่างหน้า
+
+และมีปุ่ม Back เมื่อเข้า Lesson
+
+---
+
+24. Lesson Screen IDs
+
+ต้องเชื่อมกับ HTML ที่มีอยู่แล้ว:
+
+lesson-screen
+
+lesson-progress-label
+lesson-progress-percent
+lesson-progress-fill
+
+data-lesson-page
+
+Intro:
+
+lesson-intro-title
+lesson-intro-subtitle
+lesson-intro-character
+lesson-intro-explanation
+
+Explanation:
+
+lesson-explanation-title
+lesson-explanation-subtitle
+lesson-explanation-character
+lesson-explanation-text
+
+Audio:
+
+lesson-audio-character
+audio-status
+lesson-audio-romaji
+lesson-audio-thai
+
+Reading:
+
+reading-target
+reading-romaji
+reading-thai
+reading-options
+
+Stroke:
+
+stroke-svg
+stroke-guide-1
+stroke-guide-2
+stroke-guide-3
+stroke-path-1
+stroke-path-2
+stroke-path-3
+stroke-path-4
+stroke-number-1
+stroke-number-2
+stroke-number-3
+
+Writing:
+
+writing-guide
+writing-canvas
+writing-feedback
+
+Quiz:
+
+quiz-progress
+quiz-score
+quiz-question-text
+quiz-character
+quiz-options
+quiz-feedback
+quiz-submit
+
+Result:
+
+result-score
+result-title
+result-description
+result-correct
+result-total
+result-best
+
+---
+
+25. Technical Requirement
+
+ต้องเป็น:
+
+ไฟล์ "index.html" ไฟล์เดียว
+
+รวม:
+
+- HTML
+- CSS
+- JavaScript
+
+ไว้ในไฟล์เดียวได้เลย
+
+ไม่จำเป็นต้องแยก:
+
+style.css
+app.js
+
+ถ้ามี external font สามารถโหลดจากภายนอกได้ แต่ตัวเว็บหลักต้องอยู่ใน index.html
+
+---
+
+26. Data / JavaScript
+
+ระบบต้องมี data สำหรับ:
+
+- Kana
+- Dakuten
+- Handakuten
+- Yoon
+- Vocabulary
+- Grammar
+- Lessons
+- Quiz
+- Progress
+
+สามารถใช้ JS generate UI เพื่อลดการเขียน HTML ซ้ำได้
+
+แต่ ห้ามใช้การ generate เป็นข้ออ้างให้เนื้อหาจริงหายไป
+
+ถ้าบอกว่ามี 200 บท:
+
+- ต้องมี lesson structure ครบ
+- และในเวอร์ชันเต็มควรมีเนื้อหาแตกต่างกันตามบท ไม่ใช่เอา template เดิมมาเปลี่ยนเลขบทเฉย ๆ
+
+---
+
+27. ความถูกต้องของภาษาญี่ปุ่น
+
+ต้องระวังเรื่อง:
+
+- Romaji
+- Thai pronunciation
+- การผันคำ
+- Particle
+- Grammar classification
+- Stroke order
+- Vocabulary meaning
+
+ข้อมูลสำคัญที่กำหนดไว้แล้ว:
+
+っ = moraic/geminate marker
+ん = mora และเสียงเปลี่ยนตามบริบทได้
+
+は (particle) = wa
+を = o
+へ (particle) = e
+
+きれい = な-adjective
+
+あります = สิ่งไม่มีชีวิต
+います = สิ่งมีชีวิต
+
+---
+
+28. สิ่งที่ไม่ต้องการ
+
+ไม่เอา:
+
+- เว็บ static
+- หน้าเดียวที่ยาวมาก
+- 200 บทที่เหมือนกันหมด
+- ปุ่มที่หาไม่เจอ
+- บทแรกล็อกตั้งแต่เปิดครั้งแรก
+- Animation ที่ไม่ทำงาน
+- Stroke order ปลอม ๆ
+- รูปภาพถูกบีบ/ยืด
+- Progress ที่หายหลัง refresh
+- ปุ่มที่กดแล้วไม่มีอะไรเกิดขึ้น
+- UI ที่ดูเหมือนเว็บเอกสารมากกว่าแอปเรียนภาษา
+- Emoji เป็น decoration หลัก
+
+---
+
+29. หลักการ UX สำคัญที่สุด
+
+ผู้ใช้ใหม่ต้องเปิดเว็บแล้วเข้าใจทันทีว่า:
+
+“กูต้องกดตรงไหนเพื่อเริ่มเรียน?”
+
+ดังนั้นบท 01 ควรมี CTA ชัดเจน เช่น:
+
+«เริ่มบทเรียน»
+
+หรือ
+
+«เริ่มเรียน»
+
+และเมื่อเรียนจบ:
+
+«ไปบทถัดไป»
+
+ต้องไม่มีช่วงที่ผู้ใช้ต้องเดาเองว่าต้องกดอะไร
+
+---
+
+30. เป้าหมายสุดท้าย
+
+เว็บควรให้ความรู้สึกว่า:
+
+«“นี่คือแอปเรียนภาษาญี่ปุ่นของกู”»
+
+ไม่ใช่:
+
+«“นี่คือเว็บที่เอาข้อมูลภาษาญี่ปุ่นมาใส่ไว้หลายหน้า”»
+
+ผู้ใช้ควรสามารถเปิดเว็บ → เริ่มบท 01 → เรียนทีละขั้น → ทำแบบฝึก → สอบ → ผ่าน → ปลดล็อกบท 02 → กลับมาเรียนต่อวันอื่น → ดู Progress ได้
+
+ทั้งหมดต้องทำงานต่อเนื่องในเว็บเดียว
