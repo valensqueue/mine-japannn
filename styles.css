@@ -1,21 +1,47 @@
 :root {
-  --bg: #000000;
-  --title: #fcfcfc;
-  --white: #ffffff;
-  --text-footnote: 0.9375rem; /* 15 — iOS Subhead */
-  --text-body: 1.0625rem; /* 17 — iOS Body */
-  --text-title: 1.25rem; /* 20 — iOS Title 3 */
-  --text-title-tablet: 1.5rem; /* 24 */
+  --bg: #fff9ed;
+  --title: #514640;
+  --white: #514640;
+
+  --text-footnote: 0.9375rem;
+  --text-body: 1.0625rem;
+  --text-title: 1.25rem;
+  --text-title-tablet: 1.5rem;
+
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-semibold: 600;
+
   --leading: 1.3;
+
   --duration-snappy: 220ms;
   --ease-snappy: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+
   --duration-smooth: 300ms;
   --ease-smooth: cubic-bezier(0.19, 1, 0.22, 1);
+
   --duration-swift: 800ms;
   --ease-swift: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Japanese Notebook colors */
+  --pink: #f6b8c8;
+  --pink-light: #fde2e9;
+  --pink-dark: #d9879d;
+
+  --blue: #a9dce8;
+  --blue-light: #e0f4f7;
+  --blue-dark: #6eafbf;
+
+  --green: #b9d9b0;
+  --green-light: #e5f1df;
+  --green-dark: #82ad79;
+
+  --yellow: #f7dc91;
+  --yellow-light: #fff1c5;
+  --yellow-dark: #d5b65d;
+
+  --brown: #8c6f63;
+  --border: #ead8c8;
 }
 
 *,
@@ -93,7 +119,7 @@ img {
 }
 
 .powered-by {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(81, 70, 64, 0.3);
 }
 
 .powered-brand {
@@ -111,7 +137,7 @@ img {
 }
 
 .powered-grok {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(81, 70, 64, 0.6);
 }
 
 .content {
@@ -173,7 +199,7 @@ h1 {
   letter-spacing: -0.02em;
   text-align: center;
   text-wrap: balance;
-  mix-blend-mode: plus-lighter;
+  mix-blend-mode: normal;
 }
 
 .steps {
@@ -196,8 +222,8 @@ h1 {
 .muted {
   display: inline-flex;
   align-items: center;
-  color: var(--white);
-  opacity: 0.5;
+  color: var(--brown);
+  opacity: 0.7;
   font-size: 1em;
   font-weight: var(--weight-regular);
   letter-spacing: normal;
@@ -220,7 +246,7 @@ h1 {
 .add-text {
   display: inline-flex;
   align-items: center;
-  color: var(--white);
+  color: var(--pink-dark);
   font-size: 1em;
   font-weight: var(--weight-medium);
   letter-spacing: normal;
@@ -240,10 +266,10 @@ h1 {
 }
 
 .glass--icon {
-  background: transparent;
+  background: rgba(255, 253, 247, 0.8);
   box-shadow:
-    inset 0 2px 1px -1px rgba(255, 255, 255, 0.25),
-    inset 0 -2px 1px -1px rgba(255, 255, 255, 0.25);
+    inset 0 2px 1px -1px rgba(217, 135, 157, 0.35),
+    inset 0 -2px 1px -1px rgba(169, 220, 232, 0.35);
   overflow: hidden;
 }
 
@@ -270,8 +296,7 @@ html.device-tablet .step-ios-legacy {
   display: flex;
 }
 
-/* Desktop (also the no-JS default): swap the tutorial for a visible fallback
-   that links back to the app instead of hiding everything. */
+/* Desktop fallback */
 html.device-desktop .content {
   display: none;
 }
@@ -283,7 +308,7 @@ html.device-desktop .content-desktop {
 
 .desktop-note {
   margin: 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(81, 70, 64, 0.6);
   text-align: center;
   text-wrap: balance;
 }
@@ -294,17 +319,17 @@ html.device-desktop .content-desktop {
   justify-content: center;
   padding: 10px 20px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--pink-light);
   box-shadow:
-    inset 0 2px 1px -1px rgba(255, 255, 255, 0.25),
-    inset 0 -2px 1px -1px rgba(255, 255, 255, 0.25);
-  color: var(--white);
+    inset 0 2px 1px -1px rgba(255, 255, 255, 0.8),
+    inset 0 -2px 1px -1px rgba(217, 135, 157, 0.35);
+  color: var(--pink-dark);
   font-weight: var(--weight-medium);
   text-decoration: none;
 }
 
 .desktop-open:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--pink);
 }
 
 html.device-tablet .page {
